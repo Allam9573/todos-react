@@ -1,9 +1,9 @@
-const TodoItem = ({ props }) => {
+const TodoItem = ({ text, completed }) => {
     return (
         <>
-            <p className="todo-complete">
-                {props.todo}
-            </p>
+            <div className={`${completed ? 'todo-item todo-completed':'todo-item'}`}>
+                fe
+            </div>
         </>
     )
 }

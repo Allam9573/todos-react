@@ -5,7 +5,12 @@ import { TodoList } from './components/TodoList'
 import { TodoItem } from './components/TodoItem'
 import { CreateTodoButtom } from './components/CreateTodoButtom'
 import './assets/css/app.css'
+import { useState } from 'react'
 function App() {
+
+  let todo ='hola'
+  const [complete, setComplete] = useState(true)
+
 
   return (
     <div className='container'>
@@ -13,7 +18,7 @@ function App() {
         <TodoCounter complete={3} total={10} />
         <TodoSearch />
         <TodoList>
-          <TodoItem title={"Hacer licuado"} />
+          <TodoItem key={todo.text} text={todo.text} completed={true}  />
         </TodoList>
         <CreateTodoButtom />
       </div>
