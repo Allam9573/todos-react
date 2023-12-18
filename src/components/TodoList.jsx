@@ -1,7 +1,7 @@
 const TodoList = ({ children }) => {
     return (
         <>
-            <h2>Listado de Todos</h2>
+            <h2 className="subtitle">Listado de Todos</h2>
             <ul>
                 <li>{children}</li>
             </ul>

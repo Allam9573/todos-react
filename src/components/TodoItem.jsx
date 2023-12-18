@@ -1,7 +1,9 @@
-const TodoItem = ({ title }) => {
+const TodoItem = ({ props }) => {
     return (
         <>
-            {title}
+            <p className="todo-complete">
+                {props.todo}
+            </p>
         </>
     )
 }
